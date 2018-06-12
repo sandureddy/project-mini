@@ -30,4 +30,10 @@
 </plugins>
     <finalName>project-mini</finalName>
   </build>
+  <distributionManagement>
+  <snapshotRepository>
+    <id>sandusnap</id>
+    <url>http://192.168.33.10:8081/nexus/content/repositories/sandusnap</url>
+  </snapshotRepository>
+</distributionManagement>
 </project>
