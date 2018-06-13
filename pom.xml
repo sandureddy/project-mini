@@ -4,7 +4,7 @@
   <groupId>com.sandhya.prj</groupId>
   <artifactId>project-mini</artifactId>
   <packaging>war</packaging>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0-release</version>
   <name>project-mini Maven Webapp</name>
   <url>http://maven.apache.org</url>
   <dependencies>
@@ -18,4 +18,14 @@
   <build>
     <finalName>project-mini</finalName>
   </build>
+<distributionManagement>
+  <snapshotRepository>
+    <id>sandusnap</id>
+    <url>http://192.168.33.10:8081/nexus/content/repositories/sandusnap</url>
+  </snapshotRepository>
+<repository>
+    <id>release</id>
+    <url>http://192.168.33.10:8081/nexus/content/repositories/release</url>
+  </repository>
+</distributionManagement>
 </project>
