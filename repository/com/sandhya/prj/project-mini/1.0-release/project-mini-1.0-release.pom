@@ -1,0 +1,31 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.sandhya.prj</groupId>
+  <artifactId>project-mini</artifactId>
+  <packaging>war</packaging>
+  <version>1.0-release</version>
+  <name>project-mini Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+  <build>
+    <finalName>project-mini</finalName>
+  </build>
+<distributionManagement>
+  <snapshotRepository>
+    <id>sandusnap</id>
+    <url>http://192.168.33.10:8081/nexus/content/repositories/sandusnap</url>
+  </snapshotRepository>
+<repository>
+    <id>release</id>
+    <url>http://192.168.33.10:8081/nexus/content/repositories/release</url>
+  </repository>
+</distributionManagement>
+</project>
